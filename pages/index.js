@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Card from '../components/Card';
 import Footer from '../components/Footer'; // Ensure this is Footer.tsx if using TypeScript
-import { TracingBeam } from "../components/ui/tracing-beam";
+
 
 
 export default function Home() {
@@ -12,9 +12,9 @@ export default function Home() {
 
   const apps = [
     { title: 'G-Dorks', description: 'Google dorks are advanced search queries used to uncover hidden or sensitive information on the internet by exploiting search engine indexing.', link: 'https://g-dorks.appship.me' },
-    { title: 'PDF-Convator', description: 'Stirling PDF is a tool for generating and managing PDF documents, often used for creating reports, forms, and other document types in a customizable and efficient manner', link: 'https://pdf.appship.me/' },
-    { title: 'App 3', description: 'Description for App 3', link: '#' },
-    { title: 'ComingSoon', description: 'ComingSoon', link: '#' },
+    { title: 'WifiQRCodeGenerator', description: 'The WifiQRCodeGenerator component allows users to create and download a QR code for Wi-Fi network credentials with customizable colors and encryption settings', link: '/wifi-qrcode-generator' },
+    { title: 'QRCodeGenerator', description: 'QRCodeGenerator tool generates QR codes with custom colors and error correction levels.', link: '/qrcode-generator' },
+    { title: 'More - ComingSoon', description: 'ComingSoon', link: '#' },
   ];
   
  
