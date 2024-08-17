@@ -5,15 +5,29 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gray border border-purple-500 rounded-lg shadow-lg  bg-opacity-10 backdrop-filter backdrop-blur-lg fixed w-full z-10 shadow-lg">
+    <nav className="bg-gray border border-purple-500 rounded-lg shadow-lg bg-opacity-10 backdrop-filter backdrop-blur-lg fixed w-full z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/">
-              <span className="text-white font-bold text-xl">AppShip</span>
+              <div className="flex items-center space-x-2">
+              
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 font-extrabold text-xl tracking-tight">
+                  AppShip
+                </span>
+              </div>
             </Link>
           </div>
-          
+          <div className="flex items-center">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-white hover:text-purple-300 focus:outline-none focus:text-purple-300"
+            >
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
 
